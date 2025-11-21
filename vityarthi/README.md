@@ -11,7 +11,7 @@ The **KPL (Kilometers Per Liter) Calculator** is a lightweight Command Line Inte
 * **Continuous Operation:** Features a loop mechanism that allows the user to perform multiple calculations without restarting the script.
 
 ## Technologies/Tools Used
-* **Programming Language:** Python 3.x
+* **Programming Language:** Python 3.13
 * **Libraries:** Standard Python Library (No external dependencies required)
 * **Interface:** Command Line / Terminal
 
