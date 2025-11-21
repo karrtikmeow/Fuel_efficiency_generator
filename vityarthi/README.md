@@ -1,7 +1,7 @@
-# KPL Calculator
+# Fuel efficiency generator
 
 ## Overview of the Project
-The **KPL (Kilometers Per Liter) Calculator** is a lightweight Command Line Interface (CLI) utility designed to help vehicle owners track their fuel efficiency. By inputting distance traveled and fuel consumed, the program calculates the precise fuel economy of the vehicle. It is designed to be user-friendly, robust against user input errors, and capable of performing multiple calculations in a single session.
+The **Fuel efficiency generator** is a lightweight Command Line Interface (CLI) program designed to help vehicle owners track their fuel efficiency. By inputting distance traveled and fuel consumed, the program calculates the precise fuel economy of the vehicle. It is designed to be user-friendly, robust against user input errors, and capable of performing multiple calculations in a single session.
 
 ## Features
 * **Accurate Calculation:** Computes fuel efficiency using the standard formula (Kilometers / Liters).
@@ -15,11 +15,6 @@ The **KPL (Kilometers Per Liter) Calculator** is a lightweight Command Line Inte
 * **Libraries:** Standard Python Library (No external dependencies required)
 * **Interface:** Command Line / Terminal
 
-## Steps to Install & Run the Project
-1. **Prerequisites:** Ensure you have Python installed on your system. You can check this by typing `python --version` in your terminal.
-2. **Create the File:**
-   * Create a new file named `kpl_calculator.py`.
-   * Paste the source code into this file.
-3. **Navigate to Directory:** Open your terminal or command prompt and change the directory to where you saved the file:
-   ```bash
-   cd path/to/your/file
+## Steps to Run the Project:
+1. **Open the Terminal:** In VS Code, go to the menu bar and select **Terminal > New Terminal**.
+2. **Start the Program:** In the terminal window that appears at the bottom, type the following command and press Enter: fueleffgenerator.py
