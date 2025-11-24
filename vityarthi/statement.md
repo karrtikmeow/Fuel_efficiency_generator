@@ -1,14 +1,14 @@
-Project Statement: KPL Calculator
+# Project Statement: KPL Calculator
 
-Problem Statement
+## Problem Statement
 
 Vehicle owners often struggle to accurately track their fuel economy due to reliance on manual calculations or a lack of immediate, accessible tools. This lack of precise, real-time feedback can lead to delayed detection of vehicle performance issues (e.g., poor engine efficiency) and hinder effective fuel expenditure management. The manual process is also prone to human error.
 
-Scope of the Project
+## Scope of the Project
 
 The KPL Calculator is implemented as a simple, robust Command Line Interface (CLI) application using Python. Its scope is defined by the following boundaries:
 
-In Scope:
+### In Scope:
 
 Accepting user inputs for distance traveled (in kilometers) and fuel consumed (in liters).
 
@@ -20,7 +20,7 @@ Handling the edge case of division by zero (fuel input = 0) gracefully.
 
 Providing a continuous loop for multiple calculations within a single session.
 
-Out of Scope:
+### Out of Scope:
 
 Data persistence (the application does not save historical usage data).
 
@@ -28,7 +28,7 @@ Development of a Graphical User Interface (GUI) or web interface.
 
 Complex unit conversions (e.g., MPG, L/100km).
 
-Target Users
+### Target Users
 
 The primary users of this project are individuals or small groups who require quick, reliable fuel efficiency data.
 
@@ -38,7 +38,7 @@ Daily Commuters: Individuals tracking weekly or monthly fuel usage for personal 
 
 Small Fleet Operators: Managers who need a simple tool to verify fuel logs and track vehicle performance without complex software.
 
-High-Level Features
+### High-Level Features
 
 Input Acquisition: A clear, interactive terminal interface that prompts the user for the necessary distance and fuel volume data.
 
