@@ -1,5 +1,5 @@
 def display_welcome():
-    # Show a friendly welcome message when the program starts
+    # Show a friendly welcome message when the programe starts
     print("\n--- Welcome to the Modular KPL Calculator ---")
     print("This tool helps you calculate your vehicle's fuel efficiency.")
 
