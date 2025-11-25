@@ -1,20 +1,57 @@
-# Fuel efficiency generator
+# KPL Calculator: Fuel Efficiency Tracker ⛽
 
-## Overview of the Project
-The **Fuel efficiency generator** is a lightweight Command Line Interface (CLI) program designed to help vehicle owners track their fuel efficiency. By inputting distance traveled and fuel consumed, the program calculates the precise fuel economy of the vehicle. It is designed to be user-friendly, robust against user input errors, and capable of performing multiple calculations in a single session.
+## Project Title
+**KPL Calculator: Modular Fuel Efficiency Tracker**
 
-## Features
-* **Accurate Calculation:** Computes fuel efficiency using the standard formula (Kilometers / Liters).
-* **Smart Rounding:** Automatically formats results to two decimal places for better readability.
-* **Input Validation:** Includes error handling to catch non-numeric inputs (e.g., letters or symbols) and prevent program crashes.
-* **Zero-Division Protection:** Specifically checks if the fuel input is `0` to avoid mathematical errors.
-* **Continuous Operation:** Features a loop mechanism that allows the user to perform multiple calculations without restarting the script.
+### Overview of the Project
+This project is a simple, command-line utility built with Python. The main idea behind the KPL Calculator was to stop people from making mistakes when calculating their car's mileage by hand. 
 
-## Technologies/Tools Used
-* **Programming Language:** Python 3.13
-* **Libraries:** Standard Python Library (No external dependencies required)
-* **Interface:** Command Line / Terminal
+Instead of just making one long script, we split the code up into modules—like one file just for the math and another for checking errors. This lets us show off a **modular design**, which is a key concept we learned, and it makes the program much more stable. The tool's primary function is straightforward: take distance (in KM) and fuel used (in Liters) and give the KPL (Kilometers Per Liter) score right away.
 
-## Steps to Run the Project:
-1. **Open the Terminal:** In VS Code, go to the menu bar and select **Terminal > New Terminal**.
-2. **Start the Program:** In the terminal window that appears at the bottom, type the following command and press Enter: fueleffgenerator.py
+### Key Features (What it Does)
+* **Accurate KPL Calculation:** Gets the exact fuel efficiency ratio by performing the division operation.
+* **Robust Error Protection:** This is a big one. The code uses `try...except` statements to make sure the program never crashes if you accidentally type letters or symbols instead of numbers.
+* **Zero-Safe Logic:** It specifically checks that the fuel input is not zero. If it is, it shows a clear error message instead of causing a fatal division error.
+* **Continuous Session Loop:** The program runs until you specifically tell it to stop, allowing you to calculate multiple trips without having to restart the script every time.
+* **Clean Output:** Results are rounded to two decimal places and displayed clearly in the terminal.
+
+### Technologies/Tools Used
+This project uses a very simple tech stack to focus on core programming concepts:
+
+* **Programming Language:** Python 3.x
+* **Code Structure:** Modular Architecture (Code split into dedicated `.py` files for I/O, Validation, and Calculation).
+* **Version Control:** Git & GitHub (Used for tracking changes and managing the final project repository).
+* **Development Environment:** VS Code (Used for coding and running the terminal interface).
+
+---
+
+### Steps to Install & Run the Project
+Since this is a modular project, you need to run the main file (`main.py`) as a module for the imports to work correctly.
+
+**1. Clone the Repository**
+Get the code onto your computer from GitHub.
+```bash
+git clone [https://github.com/YOUR_USERNAME/fuel_efficiency_generator.git](https://github.com/YOUR_USERNAME/fuel_efficiency_generator.git)
+```
+
+**2. Open the Terminal**
+Open your VS Code Integrated Terminal and make sure you are in the project's root folder (the folder containing `README.md` and the `src` folder).
+
+**3. Run the Modular Code**
+Execute the following command:
+```bash
+
+### Instructions for Testing
+
+You can easily test the program by trying these specific scenarios:
+**Standard Calculation:** Enter **350** for kilometers and **14** for liters. The output should be **25.0 KPL**.
+
+**Invalid Input:** Try entering letters like **abc** for kilometers. The program should display an error (`Please enter a good number`) and ask for input again.
+
+**Zero Division:** Enter **0** for liters. The program should catch this and show `FATAL ERROR: Fuel amount cannot be zero`.
+
+**Negative Value:** Enter **-5** for liters. The program should display `ERROR: The Liters value cannot be negitive`.
+
+**Exit Mechanism:** After finishing a calculation, type **no** when asked if you want to continue. The program should say `Goodbye` and close.
+
+python -m src.main
